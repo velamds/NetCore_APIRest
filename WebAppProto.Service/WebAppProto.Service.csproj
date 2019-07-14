@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WebAppProto.Application\WebAppProto.Application.csproj" />
+    <ProjectReference Include="..\WebAppProto.DI\WebAppProto.DI.csproj" />
   </ItemGroup>
 
 </Project>

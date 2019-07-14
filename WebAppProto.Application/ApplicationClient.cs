@@ -10,9 +10,9 @@ namespace WebAppProto.Application
     {
         private IRepoClient repoClient;
 
-        public ApplicationClient()
+        public ApplicationClient(IRepoClient _repoClient)
         {
-            repoClient = new RepoClient();
+            repoClient = _repoClient;
         }
 
         public Client Get(int id)

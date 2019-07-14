@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppProto.Service", "WebAppProto.Service\WebAppProto.Service.csproj", "{F94FD7DE-0F28-474A-A1CA-E41438AC20C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppProto.Service", "WebAppProto.Service\WebAppProto.Service.csproj", "{F94FD7DE-0F28-474A-A1CA-E41438AC20C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppProto.Application", "WebAppProto.Application\WebAppProto.Application.csproj", "{06AEA84B-4805-4221-9027-12128E1E3BE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppProto.Application", "WebAppProto.Application\WebAppProto.Application.csproj", "{06AEA84B-4805-4221-9027-12128E1E3BE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppProto.Domain", "WebAppProto.Domain\WebAppProto.Domain.csproj", "{7727E273-FF93-4C19-9D95-CB5666823CFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppProto.Domain", "WebAppProto.Domain\WebAppProto.Domain.csproj", "{7727E273-FF93-4C19-9D95-CB5666823CFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppProto.Data", "WebAppProto.Data\WebAppProto.Data.csproj", "{B291DE33-4DB7-4E74-AAA2-EEAEF4C4D3A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppProto.Data", "WebAppProto.Data\WebAppProto.Data.csproj", "{B291DE33-4DB7-4E74-AAA2-EEAEF4C4D3A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppProto.Transversal", "WebAppProto.Transversal\WebAppProto.Transversal.csproj", "{3FB372C3-86F8-4B0F-B632-BA084C3C1B92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppProto.Transversal", "WebAppProto.Transversal\WebAppProto.Transversal.csproj", "{3FB372C3-86F8-4B0F-B632-BA084C3C1B92}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_Service", "01_Service", "{C981ADEC-9602-419A-8645-BA2C8FD11B8F}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04_Data", "04_Data", "{157C3DC6-55CE-4A87-BB7C-06E84770A0F4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05_Transversal", "05_Transversal", "{1841BC67-4079-4F50-BB66-B71E6D8FDD4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppProto.DI", "WebAppProto.DI\WebAppProto.DI.csproj", "{E73768F2-C48E-4B71-B6A0-CDE06F939E4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{3FB372C3-86F8-4B0F-B632-BA084C3C1B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FB372C3-86F8-4B0F-B632-BA084C3C1B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FB372C3-86F8-4B0F-B632-BA084C3C1B92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E73768F2-C48E-4B71-B6A0-CDE06F939E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73768F2-C48E-4B71-B6A0-CDE06F939E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73768F2-C48E-4B71-B6A0-CDE06F939E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73768F2-C48E-4B71-B6A0-CDE06F939E4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{7727E273-FF93-4C19-9D95-CB5666823CFC} = {B2858452-86BD-4B2F-B097-69FCC437B98E}
 		{B291DE33-4DB7-4E74-AAA2-EEAEF4C4D3A8} = {157C3DC6-55CE-4A87-BB7C-06E84770A0F4}
 		{3FB372C3-86F8-4B0F-B632-BA084C3C1B92} = {1841BC67-4079-4F50-BB66-B71E6D8FDD4A}
+		{E73768F2-C48E-4B71-B6A0-CDE06F939E4B} = {C981ADEC-9602-419A-8645-BA2C8FD11B8F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {197AE42D-81F2-48FC-AA37-396F88796F92}

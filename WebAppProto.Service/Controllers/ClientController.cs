@@ -16,9 +16,9 @@ namespace WebAppProto.Service.Controllers
     {
         private IApplicationClient applicationClient;
 
-        public ClientController()
+        public ClientController(IApplicationClient _applicationClient)
         {
-            applicationClient = new ApplicationClient();
+            applicationClient = _applicationClient;
         }
         
         // GET: api/Client
@@ -38,8 +38,10 @@ namespace WebAppProto.Service.Controllers
         
         // POST: api/Client
         [HttpPost]
-        public void Post([FromBody]string value)
+        public JsonResult Post([FromBody]Client value)
         {
+            Client client = applicationClient.Insert(value);
+            return Json(client);
         }
         
         // PUT: api/Client/5

@@ -3,32 +3,42 @@ using System.Collections.Generic;
 using System.Text;
 using WebAppProto.Domain.Data.IRepository;
 using WebAppProto.Domain.Entities;
+using System.Linq;
+using WebAppProto.Data.Mapper;
+using WebAppProto.Data.Models;
 
 namespace WebAppProto.Data.Repository
 {
     public class RepoClient : IRepoClient
     {
+        private IClientMapper clientMapper;
+
+        public RepoClient(IClientMapper _clientMapper)
+        {
+            clientMapper = _clientMapper;
+        }
+
         public Client Get(int id)
         {
-            Client mock = null;
+            Client client = null;
 
-            if (id == 1)
+            using (MyContext context=new MyContext())
             {
-                mock = new Client
-                {
-                    Id = 1,
-                    Name = "Sergio",
-                    Lastname = "Munoz",
-                    Email = "velamds@gmail.com"
-                };
+                var result = context.Clients.FirstOrDefault(c => c.Id == id);
+                client = clientMapper.Map(result);
             }
-
-            return mock;
+            return client;
         }
 
         public Client Insert(Client client)
         {
-            client.Id = new Random().Next(1, 100);
+            Clients TBclient = clientMapper.Map(client);
+            using (MyContext context=new MyContext())
+            {
+                var result = context.Clients.Add(TBclient);
+                context.SaveChanges();
+                client = clientMapper.Map(TBclient);
+            }
             return client;
         }
     }

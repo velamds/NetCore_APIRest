@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Data\IMapper\" />
     <Folder Include="Business\" />
+    <Folder Include="Data\IMapper\" />
   </ItemGroup>
 
 </Project>
